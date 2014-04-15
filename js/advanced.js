@@ -34,24 +34,24 @@ var TTT = {
 			alert(currentTurn + " Wins!");
 		}
 
-		if(rowA[0] === rowA[1] && rowA[2] === rowA[0] && rowA != ""){
+		if(rowA[0] === rowA[1] && rowA[2] === rowA[0] && rowA[0] != ""){
 			sayWinner();
 		}
-		if(rowB[0] === rowB[1] && rowB[2] === rowB[0] && rowB != ""){
+		if(rowB[0] === rowB[1] && rowB[2] === rowB[0] && rowB[0] != ""){
 			sayWinner();
 		}
-		if(rowC[0] === rowC[1] && rowC[2] === rowC[0] && rowC != ""){
-			sayWinner();
-		}
-
-		if(colA[0] === colA[1] && colA[2] === colA[0] && colA != ""){
+		if(rowC[0] === rowC[1] && rowC[2] === rowC[0] && rowC[0]!= ""){
 			sayWinner();
 		}
 
-		if(colB[0] === colB[1] && colB[2] === colB[0] && colB != ""){
+		if(colA[0] === colA[1] && colA[2] === colA[0] && colA[0] != ""){
 			sayWinner();
 		}
-		if(colC[0] === colC[1] && colC[2] === colC[0] && colC != ""){
+
+		if(colB[0] === colB[1] && colB[2] === colB[0] && colB[0] != ""){
+			sayWinner();
+		}
+		if(colC[0] === colC[1] && colC[2] === colC[0] && colC[0] != ""){
 			sayWinner();
 		}
 		if(diagOne[0] === diagOne[1] && diagOne[2] === diagOne[0] && diagOne[0] != ""){
@@ -60,6 +60,7 @@ var TTT = {
 		if(diagTwo[0] === diagTwo[1] && diagTwo[2] === diagTwo[0] && diagTwo[0] != ""){
 			sayWinner();
 		}
+	}
 };
 
 //Bind a click event to the DOM td element with the class .game-board
